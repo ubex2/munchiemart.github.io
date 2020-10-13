@@ -1,118 +1,72 @@
-	<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Munchie Mart | Coming Soon</title>
-<!-- FAVICON STUFF -->
-<!-- <link rel="icon" href="myIcon.ico?v=1" type="image/x-icon" /> -->
-<!-- <link rel='shortcut icon' type='image/x-icon' href=/myIcon.ico?v=1'> -->
-<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="tools/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:700,400|Lato' rel='stylesheet' type='text/css'>
-<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-<!-- FAVICON v2 -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="apple-mobile-web-app-title" content="Munchie Mart">
-<meta name="application-name" content="Munchie Mart">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
-
-</head>
-<body>
-<div class="wrapper"><!--wrapper started-->
-	<div class="abovebanner"><!-- above banner started -->
-			<div class="header"><!-- header started-->
-				<h1 id="logo">munchie<span>mart</span></h1>
-				<p class="line1">Your favorite snacks, when you want them</p>
-			</div><!-- header ended-->
-						
-			<div class="content"><!-- content started-->
-					<p class="line1">Future updates and full website coming soon! Want to learn more? <br>
-					<br>
-					</p>
-					
-					<form method="post" action="//submit.form" onSubmit="return validateForm();">
-                    <div style="max-width: 400px;">
-            </div>
-					
-                    <div style="padding-bottom: 18px;font-size : 18px;color: #a7e09f;">Newsletter Signup</div>
-                    <div style="padding-bottom: 18px; color: #a7e09f;">Name<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_2" name="data_2" style="max-width : 300px;" class="form-control"/>
-                    </div>
-                    <div style="padding-bottom: 18px;color: #a7e09f;">Email<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_4" name="data_4" style="max-width : 300px;" class="form-control"/>
-                    </div>
-                    <div style="padding-bottom: 18px;color: #a7e09f;">Questions/Comments<br/>
-                    <textarea id="data_6" false name="data_6" style="max-width : 450px;" rows="6" class="form-control"></textarea>
-                    </div>
-                    <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Subscribe" type="submit"/></div>
-                    </form>
-
-                    <script type="text/javascript">
-                    function validateForm() {
-                    if (isEmpty(document.getElementById('data_2').value.trim())) {
-                    alert('Name is required!');
-                    return false;
-                    }
-                    if (isEmpty(document.getElementById('data_4').value.trim())) {
-                    alert('Email is required!');
-                    return false;
-                    }
-                    if (!validateEmail(document.getElementById('data_4').value.trim())) {
-                    alert('Email must be a valid email address!');
-                    return false;
-                    }
-                    return true;
-                    }
-                    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-                    function validateEmail(email) {
-                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-                    return isEmpty(email) || re.test(email);
-                    }
-                    </script>
-			
-			</div><!-- content ended -->
-	</div><!-- above banner ended -->
-	
-		<div class="belowbanner">
-			<div class="email">
-				<h2>email us</h2>
-				<p><a href="#">info@munchiemart.co</a></p>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Munchie Mart | Snack Delivery</title>
+		<link rel="favicon" type = "img/png" href = "images/favicon.ico" 
+		<meta http-equiv="content" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Homepage</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img src="./images/favicon.ico" alt="logo" />
+				<h4 class="logo">Munchie Mart</h4>
 			</div>
-			<div class="social">
-				<h2>social</h2>
-					<a href="#" class="socicon-facebook"></a>
-					<a href="https://twitter.com/MunchieMartLLC" class="socicon-twitter"></a>
-					<a href="http://www.instagram.com/munchiemartllc" class="socicon-instagram"></a>
-			</div>			
-			<div class="call">
-				<h2>call us</h2>
-				<p>262-339-4280</p>
-			</div>			
-		</div>
-</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" target="_blank" href="./Menu.pdf">Menu</a></li>
+					<li><a class="nav-link" href="https://munchie-mart-llc.square.site/">Order</a></li>
+					<li><a class="nav-link" href="about.html">About Us</a></li>
+				</ul>
+			</nav>
+			<div class="cart">
+				<img src="./images/cart.svg" alt="cart"/>
+				<a class= "nav-link" href="./checkout-panel/index.html">Cart</a>
+			</div>
+		</header>
 
-		<script type="text/javascript">
-var placeholder = $("#test").val();
+		<main>
+			<section class="presentation">
+				<div class="introduction">
+					<div class="intro-text">
+						<h1></h1>
+						<p>
+							The late night one-stop-shop for your favorite snacks and beverages, delivered for your convienence.
+						</p>
+					</div>
+					<div class="cta">
+						<button class="cta-select">Learn More</button>
+						<button class="cta-add" target="_blank" onclick="window.location.href='./Menu.pdf';">Browse Menu</button>
+					</div>
+				</div>
+				<div class="cover">
+					<img src="./images/cookie.png" alt="cookie" />
+				</div>
+			</section>
 
-$("#test").keydown(function() {
-    if (this.value == placeholder) {
-        this.value = '';
-    }
-}).blur(function() {
-    if (this.value == '') {
-        this.value = placeholder;
-    }
-});
-</script>
+			<!--<div class="laptop-select">
+				<img src="./images/arrow-left.svg" alt="" />
+				<img src="./images/dot.svg" alt="" />
+				<img src="./images/dot-full.svg" alt="" />
+				<img src="./images/dot-full.svg" alt="" />
+				<img src="./images/arrow-right.svg" alt="" />
+			</div> -->
 
-</body>
+			<img class="big-circle" src="./images/big-eclipse.svg" alt="" />
+			<img class="medium-circle" src="./images/mid-eclipse.svg" alt="" />
+			<img class="small-circle" src="./images/small-eclipse.svg" alt="" />
+		</main>
+	</body>
 </html>
+
+<div id="about">
+
+
+</div>
