@@ -20,7 +20,7 @@ header {
 }
 
 .logo-container,
-.nav-links,
+.nav-links, .hours,
 .cart {
 	display: flex;
 }
