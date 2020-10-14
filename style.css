@@ -192,6 +192,11 @@ nav {
 }
 
 @media (max-width: 480px) {}
-.logo_class img {
+.logo_container {
+    height: auto;
+}
+
+@media (max-width: 375px) {}
+.logo_container {
     height: auto;
 }
