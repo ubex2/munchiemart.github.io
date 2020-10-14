@@ -190,3 +190,8 @@ nav {
 		opacity: 0.2;
 	}
 }
+
+@media (max-width: 480px) {}
+.logo_class img {
+    height: auto;
+}
