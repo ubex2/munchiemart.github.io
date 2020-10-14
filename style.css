@@ -20,7 +20,7 @@ header {
 }
 
 .logo-container,
-.nav-links, .hours,
+.nav-links,
 .cart {
 	display: flex;
 }
@@ -45,6 +45,9 @@ header {
 	margin: 5px;
 	font-size: 20px;
 	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 nav {
 	flex: 4;
