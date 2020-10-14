@@ -191,6 +191,10 @@ nav {
 	}
 }
 
+.header-container {
+	padding-top: 100%;
+}
+
 @media (max-width: 480px) {}
 .logo_container {
     height: auto;
