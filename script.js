@@ -53,7 +53,7 @@ function displayCookies() {
     e_cookieQuantity.innerHTML = Math.floor(cookies).toLocaleString();
 
     // Update the title to match
-    document.title = Math.floor(cookies).toLocaleString() + " " + e_cookieQuantity_under.innerHTML + " - Cookie Clicker";
+    document.title = Math.floor(cookies).toLocaleString() + " " + e_cookieQuantity_under.innerHTML + " - Munchie Clicker";
 }
 
 // Adds items to the store
