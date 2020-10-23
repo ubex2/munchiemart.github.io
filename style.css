@@ -22,34 +22,33 @@ header {
 /* Cookie */
 
 #cookie_container {
-    width: 20%;
-    margin: -10;
-    padding: 2% 2% 0% 2%;
-    text-align: right;
-    display: inline-block;
-    float: left
+	width: 20%;
+    padding: 2% 2% 2% 2%;
+	text-align: right; 
+	display: flex;
 }
 
 #cookieQuantity {
 	font-size: 400%;
+	margin-top: 20px;
+	text-align: center;
 }
 
 img#cookie {
-    cursor: pointer;
-    width: 88%;
-    max-width: 630px;
+	cursor: pointer;
+	max-width: 640px;
     transition: all 0.2s;
-    margin: 40px auto 0 auto;
+	padding: 10%;
+	margin-top: 20px;
 }
 
 img#cookie:hover {
-    width: 90%;
+    width: 98%;
     max-width: 640px;
 }
 
 img#cookie:active {
-    width: 92%;
-    max-width: 620px;
+	max-width: 640px;
     padding-top: 5px;
 }
 
@@ -82,10 +81,9 @@ img#cookie:active {
 /* Shop */
 
 #shop_container {
-    width: 20%;
-    margin: 0;
-    display: display-internal;
-    float: right;
+    max-width: 100%;
+    margin-top: 25%;
+    display: internal;
 }
 
 #shop_container ul#products {
@@ -144,7 +142,8 @@ img#cookie:active {
 
 .product .product_owned {
     float: right;
-    font-size: 20px;
+	font-size: 20px;
+	padding: 10px;
 }
 
 
@@ -168,14 +167,14 @@ img#cookie:active {
 .logo-container {
 	flex: 1;
 }
-.logo {
+/* .logo {
 	font-weight: 400;
 	margin: 5px;
 	font-size: 20px;
 	text-decoration: none;
 	object-fit: contain;
 	font-family: 'Sound Bubble', sans-serif;
-}
+} */
 
 #logo {
 	font-family: 'Sound Bubble', sans-serif;
@@ -245,12 +244,12 @@ nav {
 
 .cover {
 	height: 60vh;
-	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
 }
 
-.coverText {
+.coverTitle {
 	justify-content: center;
-	padding-bottom: 2px;
 	color: #a7e09f;
 }
 .cover img {
@@ -258,6 +257,7 @@ nav {
 	filter: drop-shadow(0px 5px 3px black);
 	animation: drop 1.5s ease;
 	justify-content: center;
+	margin-top: -40px;
 }
 
 .big-circle {
