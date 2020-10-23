@@ -19,6 +19,135 @@ header {
 	align-items: center;
 }
 
+/* Cookie */
+
+#cookie_container {
+    width: 20%;
+    margin: -10;
+    padding: 2% 2% 0% 2%;
+    text-align: right;
+    display: inline-block;
+    float: left
+}
+
+#cookieQuantity {
+	font-size: 400%;
+}
+
+img#cookie {
+    cursor: pointer;
+    width: 88%;
+    max-width: 630px;
+    transition: all 0.2s;
+    margin: 40px auto 0 auto;
+}
+
+img#cookie:hover {
+    width: 90%;
+    max-width: 640px;
+}
+
+img#cookie:active {
+    width: 92%;
+    max-width: 620px;
+    padding-top: 5px;
+}
+
+.click_feedback {
+    position: absolute;
+    pointer-events: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #222;
+    font-size: 24px;
+    animation-name: disspearup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+/* The animation code */
+
+@keyframes disspearup {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate(0, -150px);
+    }
+}
+
+/* Shop */
+
+#shop_container {
+    width: 20%;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+#shop_container ul#products {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product {
+    background-color: #a7e09f;
+    margin-top: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: bold;
+    height: 70px;
+}
+
+.product:hover {
+    background-color: #a7e09f;
+}
+
+.product:active {
+    background-color: #a7e09f;
+}
+
+.product .product_image {
+	position: relative;
+	top: 0px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+.product .product_image, .product .product_text {
+    display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+}
+
+.product .product_title {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.product .product_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product .product_price {
+    font-size: 15px;
+    background-image: url("./images/cookie_icon.svg");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.product .product_owned {
+    float: right;
+    font-size: 20px;
+}
+
+
 .logo-container,
 .nav-links,
 .cart {
@@ -46,6 +175,12 @@ header {
 	text-decoration: none;
 	object-fit: contain;
 	font-family: 'Sound Bubble', sans-serif;
+}
+
+#logo {
+	font-family: 'Sound Bubble', sans-serif;
+	object-fit: contain;
+	text-decoration: none;
 }
 nav {
 	flex: 4;
@@ -75,8 +210,8 @@ nav {
 	flex: 1;
 }
 .intro-text h1 {
+	font-family: 'Alegreya' , sans;
 	font-size: 44px;
-	font-weight: 500;
 	background: linear-gradient(to right, #494964, #6f6f89);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -110,15 +245,20 @@ nav {
 }
 
 .cover {
-	flex: 1;
-	display: flex;
-	justify-content: center;
 	height: 60vh;
+	padding: 20px;
+}
+
+.coverText {
+	justify-content: center;
+	padding-bottom: 2px;
+	color: #a7e09f;
 }
 .cover img {
 	height: 100%;
 	filter: drop-shadow(0px 5px 3px black);
 	animation: drop 1.5s ease;
+	justify-content: center;
 }
 
 .big-circle {

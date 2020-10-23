@@ -17,7 +17,7 @@
 		<header>
 				<div class="logo-container">
 					<img src="./images/favicon.ico" alt="logo" />
-					<h4 class="logo">Munchie Mart</h4>
+					<!-- <h4 class="logo">Munchie Mart</h4> -->
 				</div>
 				<nav>
 					<!-- <ul class="nav-links">
@@ -37,18 +37,44 @@
 			<section class="presentation">
 				<div class="introduction">
 					<div class="intro-text">
-						<h1></h1>
+						<h1>Munchie Mart LLC.</h1>
 						<p>
 							La Crosse's first late night delivery service for your favorite snacks & beverages, designed for your convienence.
 						</p>
+						
 					</div>
 					<div class="cta">
 						<button class="cta-select" target="_blank" href="https://munchie-mart-llc.square.site/">Order Now!</button>
 						<button class="cta-add" target="_blank" onclick="window.location.href='./Menu.pdf';">Browse Menu</button>
 					</div>
 				</div>
+				
 				<div class="cover">
-					<img src="./images/cookie.png" alt="cookie" />
+					<div class="coverText">
+						<h4>Or a fun game while you wait...</h4>
+					</div>
+					<p id="cookieQuantity">0</p>
+					<p id="cookieQuantity_under">cookies</p>
+					<p>(<span id="cookieCps">0.0</span> per second)</p>
+					<img src="./images/cookie.png" alt="Cookie" id="cookie" draggable="false" />
+				</div>
+				<div id="shop_container">
+					<ul id="products">
+		
+						
+		
+						<li class="product" id="1" onclick="purchaseStoreOption(1)">
+							<p class="product_owned">10</p>
+							<img src="./images/cursor.svg" alt="Cursor" class="product_image" draggable="false" />
+							<div class="product_text">
+								<p class="product_title"><span class="product_name">Cursor</span> (<span class="product_cps">0.1</span> cps)</p>
+								<p class="product_price">10</p>
+							</div>
+						</li>
+		
+						
+		
+					</ul>
 				</div>
 			</section>
 
@@ -64,6 +90,7 @@
 			<img class="medium-circle" src="./images/mid-eclipse.svg" alt="" />
 			<img class="small-circle" src="./images/small-eclipse.svg" alt="" />
 		</main>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
 
