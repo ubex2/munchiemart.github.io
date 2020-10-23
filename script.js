@@ -130,8 +130,8 @@ storeOptions = {
         product_owned: 0,
         image_src: "./images/chef.svg",
         product_name: "Chef",
-        product_cps: 20,
-        product_price: 1000
+        product_cps: 10,
+        product_price: 10000
     }
 };
 // Adds the storeOptions to the page
