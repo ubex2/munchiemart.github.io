@@ -301,6 +301,42 @@ nav {
 		transform: translateY(0px);
 	}
 }
+/* Iphone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+	and (-webkit-device-pixel-ratio : 3)
+	and (orientation : portrait) { 
+		 
+	#shop_container{
+
+		max-width: 100%;
+	}
+}
+/* Iphone 8 */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+	and (-webkit-device-pixel-ratio : 2)
+	and (orientation : portrait) { 
+
+		#shop_container{
+
+			max-width: 100%;
+		}
+	}
+
+/* Iphone 8 Plus */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+	and (-webkit-device-pixel-ratio : 3)
+	and (orientation : portrait) { 
+		#shop_container{
+
+			max-width: 100%;
+		}
+	}
 
 @media screen and (max-width: 1024px) {
 	.presentation {
