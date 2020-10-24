@@ -13,10 +13,10 @@ button {
 
 header {
 	display: flex;
-	width: 95%;
-	height: 10vh;
+	width: 100%;
 	margin: auto;
-	align-items: center;
+	text-align: center;
+	padding: 20px;
 }
 
 /* Cookie */
@@ -146,10 +146,12 @@ img#cookie:active {
 	padding: 10px;
 }
 
-
-.logo-container,
-.nav-links,
+/* .nav-links,
 .cart {
+	display: flex;
+} */
+
+.logo-container {
 	display: flex;
 }
 
@@ -164,23 +166,6 @@ img#cookie:active {
 	text-decoration: none;
 }
 
-.logo-container {
-	flex: 1;
-}
- .logo {
-	font-weight: 400;
-	margin: 5px;
-	font-size: 20px;
-	text-decoration: none;
-	object-fit: contain;
-	font-family: 'Sound Bubble', sans-serif;
-} 
-
-#logo {
-	font-family: 'Sound Bubble', sans-serif;
-	object-fit: contain;
-	text-decoration: none;
-}
 nav {
 	flex: 4;
 }
@@ -198,11 +183,15 @@ nav {
 	justify-content: flex-end;
 }
 
+.logo{
+	display: inline-block;
+	margin: 0 auto;
+}
+
 .presentation {
 	display: flex;
-	width: 90%;
+	width: 95%;
 	margin: auto;
-	min-height: 80vh;
 	align-items: center;
 }
 .introduction {
