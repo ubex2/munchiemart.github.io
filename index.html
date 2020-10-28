@@ -5,11 +5,13 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181062980-1"></script>
 		<script>
   			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());	
-
-  			gtag('config', 'UA-181062980-1');
+			  function gtag(){
+				  dataLayer.push(arguments);
+				}
+  				gtag('js', new Date());	
+  				gtag('config', 'UA-181062980-1');
 		</script>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Landing Page | Munchie Mart</title>
@@ -51,8 +53,9 @@
 						
 					</div>
 					<div class="cta">
-						<button class="cta-select" target='_blank' onClick="parent.open('https://munchie-mart-llc.square.site/s/order')">Order Here!</button>
-						<button class="cta-add" target="_blank" onClick="parent.open('https://munchie-mart-llc.square.site')">Learn More</button>
+						<button id='orderHereButton' class="cta-select" target='_blank' onClick="parent.open('https://munchie-mart-llc.square.site/s/order')">Order Here!</button>
+						<button id='learnMoreButton' class="cta-add" target="_blank" onClick="parent.open('https://munchie-mart-llc.square.site')">Learn More</button>
+						<!-- onclick="_gaq.push(['_trackEvent', 'learnMoreButton', 'clicked'])" -->
 					</div>
 				</div>
 				
@@ -82,7 +85,22 @@
 			<img class="big-circle" src="./images/big-eclipse.svg" alt="" />
 			<img class="medium-circle" src="./images/mid-eclipse.svg" alt="" />
 			<img class="small-circle" src="./images/small-eclipse.svg" alt="" />
+
+			<!-- GA.JS EVENT CLICK TESTING -->
+			<script>
+
+				var btn = document.getElementById('learnMoreButton');
+				btn.onclick = _trackEvent(){
+					ga('send', 'event', 'userInput', 'buttonClick', 'learnMore', 'clicked');
+				}
+
+			</script>
+
+
+
 		</main>
+
 		<script type="text/javascript" src="script.js"></script>
 	</body>
+
 </html>
