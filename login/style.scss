@@ -58,6 +58,7 @@
   
   body {
     background: $maincolor2;;
+    align-self: auto;
   }
   .login_form {
     @include flexbox;
