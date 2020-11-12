@@ -86,9 +86,8 @@
 			<script>
 
 				var btn = document.getElementById('learnMoreButton');
-				btn.onclick = _trackEvent(){
-					ga('send', 'event', 'userInput', 'buttonClick', 'learnMore', 'clicked');
-				}
+				btn.onclick = _trackEvent();
+				ga('send', 'event', 'userInput', 'buttonClick', 'learnMore', 'clicked');
 
 			</script>
 
