@@ -53,7 +53,7 @@ function displayCookies() {
     e_cookieQuantity.innerHTML = Math.floor(cookies).toLocaleString();
 
     // Update the title to match
-    document.title = Math.floor(cookies).toLocaleString() + "Munchie Mart | " + " " + e_cookieQuantity_under.innerHTML ;
+    document.title = Math.floor(cookies).toLocaleString() + "Munchie Mart | " + " " + e_cookieQuantity_under.innerHTML;
 }
 
 // Adds items to the store
