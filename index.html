@@ -12,6 +12,18 @@
   				gtag('config', 'UA-181062980-1');
 		</script>
 
+		<!-- GrowSurf Referral Program Code -->
+		<script type="text/javascript">
+			/* To enable Participant Auto Authentication, uncomment this code below (https://docs.growsurf.com/getting-started/participant-auto-authentication) */
+			/*
+			window.grsfConfig = {
+	  		email: "participant@email.com",// Replace this with the participant's email address
+	  		hash: "HASH_VALUE" // Replace this with the SHA-256 HMAC value
+			};
+			*/
+			(function(g,r,s,f){g.grsfSettings={campaignId:"1cte5y",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
+  		</script>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Munchie Mart | Landing Page</title>
