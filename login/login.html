@@ -19,27 +19,31 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="./style.scss"/>
   </head>
-  
-<div class="login_form">
-    <setion class="login-wrapper">
+      <body>
+        <main>
+          <div class="login_form">
+            <section class="login-wrapper">
+                <div class="logo">
+                  <img src="/images/FaviconCustom.png" alt="loginLogo"></a>
+                </div>
       
-      <div class="logo">
-   <img src="/images/FaviconCustom.png" alt="loginLogo"></a>
-      </div>
-      
-      <form id="login" method="post" action="#">
+                <form id="login" method="post" action="#">
        
-        <label for="username">User Name</label>
-        <input  required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
+                  <label for="username">User Name</label>
+                  <input  required name="login[username]" type="text" autocapitalize="off" autocorrect="off"/>
         
-        <label for="password">Password</label>
-        <input class="password" required name="login[password]" type="password" />
-        <div class="hide-show">
-          <span>Show</span>
-        </div>
-        <button type="submit">Sign In</button>
-      </form>
+                  <label for="password">Password</label>
+                  <input class="password" required name="login[password]" type="password" />
+
+                    <div class="hide-show">
+                      <span>Show</span>
+                    </div>
+                  <button type="submit">Sign In</button>
+                </form>
       
-    </section>
-  </div>
+              </section>
+
+            </div>
+        </main>
+    </body>
   </html>
