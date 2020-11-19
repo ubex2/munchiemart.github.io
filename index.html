@@ -22,7 +22,9 @@
 			};
 			*/
 			(function(g,r,s,f){g.grsfSettings={campaignId:"1cte5y",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
-  		</script>
+		  </script>
+		  
+		<script src="https://MomentJS.com/downloads/moment.js"></script> 
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -43,7 +45,15 @@
 					<!-- <ul class="nav-links">
 						<li><a class="nav-link" href="./login/login.html">Login</a></li>
 					</ul> -->
-				</nav> 
+				</nav>
+				<div class="date">
+					<script type="text/javascript">
+						var today = moment().format('MMMM Do YYYY, h:mm:ss a');
+						var result = today.fontcolor('a7e09f');
+						document.write("Today's Date: " + result);
+					</script> 
+					<p style="font-size: 12px;">Park on the same side as tomorrow's date.</p>
+				</div> 
 				<div class="cart">
 					<a href="./login/login.html" style="text-decoration:none">Company Login</a>
 				</div>
