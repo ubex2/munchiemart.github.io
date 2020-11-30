@@ -135,7 +135,7 @@ storeOptions = {
     }
 };
 // Adds the storeOptions to the page
-//addStoreOption(storeOptions["1"]);
+addStoreOption(storeOptions["1"]);
 addStoreOption(storeOptions["2"]);
 addStoreOption(storeOptions["3"]);
 
