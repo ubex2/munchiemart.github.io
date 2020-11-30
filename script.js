@@ -114,7 +114,7 @@ storeOptions = {
         product_owned: 0,
         image_src: "./images/cursor.svg",
         product_name: "Cursor",
-        product_cps: 0.1,
+        product_cps: 0.25,
         product_price: 10
     },
     2: {
@@ -122,7 +122,7 @@ storeOptions = {
         product_owned: 0,
         image_src: "./images/oven.svg",
         product_name: "Oven",
-        product_cps: 1.5,
+        product_cps: 2.50,
         product_price: 100
     },
     3: {
@@ -130,7 +130,7 @@ storeOptions = {
         product_owned: 0,
         image_src: "./images/chef.svg",
         product_name: "Chef",
-        product_cps: 10,
+        product_cps: 15.0,
         product_price: 10000
     }
 };
