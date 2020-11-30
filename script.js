@@ -114,7 +114,7 @@ storeOptions = {
         product_owned: 0,
         image_src: "./images/cursor.svg",
         product_name: "Cursor",
-        product_cps: 0.25,
+        product_cps: 0.5,
         product_price: 10
     },
     2: {
