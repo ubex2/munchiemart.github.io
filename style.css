@@ -153,7 +153,7 @@ img#cookie:active {
 } */
 
 .logo-container {
-	display: flex;
+	display: display-box;
 }
 
 .hours{
@@ -200,7 +200,6 @@ nav {
 	font-family: 'Alegreya' , sans-serif;
 	font-size: 44px;
 	background: linear-gradient(to right, #494964, #6f6f89);
-	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 .intro-text p {
