@@ -147,14 +147,9 @@ img#cookie:active {
 	padding: 10px;
 }
 
-/* .nav-links,
-.cart {
+ .nav-link {
 	display: flex;
-} */
-
-.logo-container {
-	display: display-box;
-}
+} 
 
 .hours{
 	font-family: 'Poppins', sans-serif;
