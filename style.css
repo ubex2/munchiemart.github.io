@@ -186,11 +186,6 @@ nav {
 	text-decoration: none;
 }
 
-.logo{
-	display: inline-block;
-	margin: 0 auto;
-}
-
 .presentation {
 	display: flex;
 	width: 95%;
