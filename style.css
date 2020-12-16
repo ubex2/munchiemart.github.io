@@ -147,9 +147,15 @@ img#cookie:active {
 	padding: 10px;
 }
 
- .nav-link {
+/* .nav-links,
+.cart {
 	display: flex;
-} 
+} */
+
+.logo-container {
+	display: inline-flex;
+	margin: 10px;
+}
 
 .hours{
 	font-family: 'Poppins', sans-serif;
@@ -195,6 +201,7 @@ nav {
 	font-family: 'Alegreya' , sans-serif;
 	font-size: 44px;
 	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 .intro-text p {
