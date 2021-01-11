@@ -302,6 +302,10 @@ nav {
 
 		max-width: 100%;
 	}
+	#logo-container{
+
+		max-width: 500px;
+	}
 }
 /* Iphone 8 */
 @media only screen 
@@ -314,6 +318,10 @@ nav {
 
 			max-width: 100%;
 		}
+		#logo-container{
+
+			max-width: 500px;
+		}
 	}
 
 /* Iphone 8 Plus */
@@ -325,6 +333,10 @@ nav {
 		#shop_container{
 
 			max-width: 100%;
+		}
+		#logo-container{
+
+			max-width: 500px;
 		}
 	}
 
