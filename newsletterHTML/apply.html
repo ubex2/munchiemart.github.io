@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application | Munchie Mart</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 18px;
+      color: #eee;
+      }
+      body {
+		background: url("images/workplace.svg") no-repeat center;
+		background-size: cover;
+      }
+	  
+	  div.background {
+		
+		opacity: 0.10;
+	  
+	  }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.9); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+	  
+	  .logo {
+	  height: auto;
+	  max-width: 35%;
+	  align: center;
+	  
+	  }
+	  
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+	  margin: 10px;
+      }
+	  
+	 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <img class="logo"; src="images/logo.svg"></img>
+        <h1 style="font-weight:500;">IT'S TIME TO WORK SOMEWHERE YOU ENJOY!</h1>
+        <p>As much as we value operating an efficient business... </p>
+		<p>We much rather pride ourselves over the peaceful office culture working here at Munchie Mart. </p>
+		<p>Apply today to see what all the chatter is about.</p>
+        <div class="btn-group">
+          <a class="btn-item" href="https://www.instagram.com/munchiemartllc/">Instagram</a>
+          <a class="btn-item" href="https://twitter.com/MunchieMartLLC">Twitter</a>
+        </div>
+      </div>
+      <form action="addContact.php" method="post">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h1 style="font-weight:600;">  Application For Employment</h1>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="First Name">
+		  <input type="text" name="name" placeholder="Last Name">
+          <input type="text" name="name" placeholder="Email*">
+          <input type="text" name="name" placeholder="Phone Number">
+          <select>
+            <option value="course-type" selected>Desired Position*</option>
+            <option value="hr">Human Resources Manager</option>
+            <option value="sales">General Salesperson</option>
+            <option value="accounting">Accountant</option>
+            <option value="delivery">Delivery Coordinator</option>
+            <option value="other">Other</option>
+          </select>
+		  <label for="file-select">Resume Upload:</label>
+			<input type="file" name="upload" id="file-select">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox"><span>I agree to the <a href="privacy_policy.html">Privacy Policy for Munchie Mart.</a></span>
+        </div>
+        <button type="submit" href="/">Submit my Application</button>
+      </form>
+    </div>
+  </body>
+</html>
