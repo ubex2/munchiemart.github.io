@@ -74,38 +74,10 @@
 
 <div class="p_bar_body"><progress id="progress_bar" value="0" max="100"></progress><div class="progress-value">
 </div>
+</div>
 <spacer type="vertical" width="500px"> </spacer>
 <p>0%</p>
 
-</div>
-
-<script>
-	$(document).ready(function() {
-	var progressbar = $('#progress_bar');
-
-	max = progressbar.attr('max');
-
-	time = (1000 / max) * 5;
-
-	value = progressbar.val();
-
-	var loading = function() {
-	value += 1;
-
-	addValue = progressbar.val(value);
-
-	$('.progress-value').html(value + '%');
-
-	if (value == max) {
-	clearInterval(animate);
-	}
-	};
-
-	var animate = setInterval(function() {
-	loading();
-	}, time);
-	});
-</script>
-
+<script type="text/javascript" src="scriptBar.js"></script>
 
 </html>
