@@ -65,20 +65,43 @@
 		border-radius: 2px;
 		box-shadow: 0px 1px 1px 1px #ccc;
 		}
+
+		body {
+		width: 1500px;
+		margin: auto;
+		display: block;
+
+		}
+
+		.bar_container{
+		display: inline-block;
+		align-items: center;
+		
+		}
+
+		h1 {
+		color:#45B565;
+		}
 		</style>
 	</head>
 
 <div class="body">
-<img src="images/headerSE.png" width="1000" height="500" alt="headerPicture">
-<img src="images/SE1.png" width="500" height="500" alt="pictureOne">
-<img src="images/SE2.png" width="500" height="500" alt="pictureTwo">
-<img src="images/SE3.png" width="500" height="500" alt="pictureThree">
+<img src="images/headerSE.png" width="1500" alt="headerPicture">
+<img src="images/SE2.png" width="1000" alt="pictureTwo">
+<img src="images/SE3.png" width="1000" alt="pictureThree">
+<br>
+<br>
 </div>
 
-<div class="p_bar_body"><progress id="progress_bar" value="10" max="100"></progress><div class="progress-value">
-</div></div>
-<br></br>
-<p>0%</p>
+<div class="bar_container" id="progress-container">
+	<div class="p_bar_body"><progress id="progress_bar" value="10" max="500"></progress><div class="progress-value">
+	</div>
+	</div>
+	<br>
+	<h1>10% of our $500.00 goal already raised!</h1>
+	<h3>If you're able to, please consider supporting this mission using this <a href="https://gofund.me/c7225079">GoFundMe link</a>.</h3>
+</div>
+
 
 <script>
     let fillData = () => {
