@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operation: Swinging Eagle | MM</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<style>
+	progress {
+	width: 500px;
+	height: 25px;
+	border: 0px none;
+	background-color: #E5E5E5;
+	border-radius: 10px;
+	padding: 4px 5px 5px 5px;
+	}
+	progress::-webkit-progress-bar {
+	background-color: #E5E5E5;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+	}
+	progress::-webkit-progress-value {
+	border-radius: 50px;
+	background:
+	-webkit-linear-gradient(135deg, transparent, transparent 20%, rgba(0, 0, 0, 0.1) 33%, #45B565 50%, transparent 10%),
+	-webkit-linear-gradient(top, #81CE97, #81CE97),
+	-webkit-linear-gradient(left, #ba7448, #c4672d);
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+
+	}
+	@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position:100px 0px, 0 0, 0 0}
+	}
+	.progress-value{
+	color: #444;
+	margin-left: 507px;
+	margin-top: -24px;
+	}
+
+	.progressDiv {
+	width: 84%;
+	background: #fcfcfc;
+	height: 325px;
+	border: 1px solid #ccc;
+	position: relative;
+	left: 7%;
+	top: 100px;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0px 1px 1px 1px #ccc;
+	}
+	</style>
+</head>
+
+<div class="p_bar_body"><progress id="progress_bar" value="0" max="100"></progress><div class="progress-value">
+</div>
+<p>0% (Auto updates soon!)</p>
+</div>
+
+<script>
+	$(document).ready(function() {
+	var progressbar = $('#progress_bar');
+
+	max = progressbar.attr('max');
+
+	time = (1000 / max) * 5;
+
+	value = progressbar.val();
+
+	var loading = function() {
+	value += 1;
+
+	addValue = progressbar.val(value);
+
+	$('.progress-value').html(value + '%');
+
+	if (value == max) {
+	clearInterval(animate);
+	}
+	};
+
+	var animate = setInterval(function() {
+	loading();
+	}, time);
+	});
+</script>
+
+
+</html>
