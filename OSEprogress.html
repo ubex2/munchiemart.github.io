@@ -72,11 +72,17 @@
 <img src="images/headerSE.png" width="1500" height="848" alt="headerPicture">
 </div>
 
-<div class="p_bar_body"><progress id="progress_bar" value="0" max="100"></progress><div class="progress-value">
-</div>
-</div>
-<spacer type="vertical" width="500px"> </spacer>
+<div class="p_bar_body"><progress id="progress_bar" value="20" max="100"></progress><div class="progress-value">
+</div></div>
+<br></br>
 <p>0%</p>
+
+<script>
+    let fillData = () => {
+        let ele = document.getElementById('progress_bar');
+        ele.innerHTML += '20%';
+    }
+</script>
 
 <script type="text/javascript" src="scriptBar.js"></script>
 
