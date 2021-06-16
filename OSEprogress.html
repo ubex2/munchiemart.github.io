@@ -79,10 +79,6 @@
 		margin: auto;
 		}
 
-		h1 {
-		color:#45B565;
-		}
-
 		body {
 		padding: 20px;
 		align-items: center;
@@ -93,38 +89,74 @@
 		padding: 20px;
 		margin: auto;
 		}
+
+		#top {
+		vertical-align:  top;
+		}
+
+		#homepageButton {
+		width: 400px;
+		height: 300px;
+		}
+
+		h1 { 
+		font-family: Lato; 
+		font-size: 56px; 
+		font-style: normal; 
+		font-variant: normal; 
+		font-weight: 700; 
+		line-height: 26.4px; } 
+
+		h3 { 
+		font-family: Lato; 
+		font-size: 18px; 
+		font-style: normal; 
+		font-variant: normal; 
+		font-weight: 700; 
+		line-height: 19.8px; } 
+
+		p { 
+		font-family: Lato; 
+		font-size: 14px; 
+		font-style: normal; 
+		font-variant: normal; 
+		font-weight: 400; 
+		line-height: 20px; 
+		}
+
+		#support {
+		align-items: center;
+		display: inline-block;
+		}
 		</style>
 	</head>
 
 <body>
+	<div class="top" id="top">
+		<img src="images/headerSE.png" width="75%" max-height="400px" alt="headerPicture">
+		
+	</div>
 	<div class="body-Images">
-		<img src="images/headerSE.png" width="1200" alt="headerPicture">
-		<img src="images/SE2.png" width="600" alt="pictureTwo">
-		<img src="images/SE3.png" width="600" alt="pictureThree">
-		<br>
-		<br>
+		<img src="images/SE2.png" width="700" alt="pictureTwo">
+		<img src="images/SE3.png" width="700" alt="pictureThree"><br>
 		</div>
 		
-		<div class="bar_container" id="progress-container">
-			<div class="p_bar_body"><progress id="progress_bar" value="10" max="500"></progress><div class="progress-value">
-			</div>
-			</div>
-			<br>
-			<span style="vertical-align:middle;"><h1>10%</h1><h2> of our $500.00 goal has already been contributed!</h2></span>
-			<h3 style="color: #cf9875">If you are financially able, please consider supporting our mission using this <a href="https://gofund.me/c7225079">GoFundMe</a> link.</h3>
-		</div>
+	<div id="support">
+		<br></br>
+		<h1 style="color: #68b76a;">SPREAD THE LOVE!</h1>
+		<h3>Donations help support the La Crosse community and local small business</h3>
+		<!-- DONATION APP EMBED thru DonorBox -->
+		<script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
+			<iframe src="https://donorbox.org/embed/operation-swinging-eagle?default_interval=o&amount=25" name="donorbox" allowpaymentrequest="" seamless="seamless" frameborder="0" scrolling="no" height="700px" width="100%" 
+			style="max-width: 800px; min-width: 400px; max-height:none!important">
+			</iframe>
+	</div>
 	
-		<script>
-			let fillData = () => {
-				let ele = document.getElementById('progress_bar');
-				ele.innerHTML += '10%';
-			}
-		</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		
-		<form>
-			<input type="button" value="Return to Homepage" onclick="history.back()">
-		</form>
+	<!-- Homepage Button -->
+	<form id="homepageButton">
+		<input type="button" value="Return to Homepage" onclick="history.back()">
+	</form>
 </body>
 </html>
