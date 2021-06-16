@@ -66,16 +66,15 @@
 		box-shadow: 0px 1px 1px 1px #ccc;
 		}
 
-		body {
-		width: 1500px;
+		.body-Images {
+		max-width: 1500px;
 		margin: auto;
-		display: block;
-		align-items: center;
+		display: inline-block;
 
 		}
 
 		.bar_container{
-		display: flexbox;
+		display: block;
 		align-items: baseline;
 		margin: auto;
 		}
@@ -83,36 +82,49 @@
 		h1 {
 		color:#45B565;
 		}
+
+		body {
+		padding: 20px;
+		align-items: center;
+		margin: auto;
+		}
+
+		head {
+		padding: 20px;
+		margin: auto;
+		}
 		</style>
 	</head>
 
-<div class="body">
-<img src="images/headerSE.png" width="1200" alt="headerPicture">
-<img src="images/SE2.png" width="600" alt="pictureTwo">
-<img src="images/SE3.png" width="600" alt="pictureThree">
-<br>
-<br>
-</div>
-
-<div class="bar_container" id="progress-container">
-	<div class="p_bar_body"><progress id="progress_bar" value="10" max="500"></progress><div class="progress-value">
-	</div>
-	</div>
-	<br>
-	<span style="vertical-align:middle;"><h1>10%</h1><h2> of our $500.00 goal has already been contributed!</h2></span>
+<body>
+	<div class="body-Images">
+		<img src="images/headerSE.png" width="1200" alt="headerPicture">
+		<img src="images/SE2.png" width="600" alt="pictureTwo">
+		<img src="images/SE3.png" width="600" alt="pictureThree">
+		<br>
+		<br>
+		</div>
+		
+		<div class="bar_container" id="progress-container">
+			<div class="p_bar_body"><progress id="progress_bar" value="10" max="500"></progress><div class="progress-value">
+			</div>
+			</div>
+			<br>
+			<span style="vertical-align:middle;"><h1>10%</h1><h2> of our $500.00 goal has already been contributed!</h2></span>
+			<h3 style="color: #cf9875">If you are financially able, please consider supporting our mission using this <a href="https://gofund.me/c7225079">GoFundMe</a> link.</h3>
+		</div>
 	
-	
-</div>
-
-<h3 style="color: #cf9875">If you are financially able, please consider supporting our mission using this <a href="https://gofund.me/c7225079">GoFundMe</a> link.</h3>
-
-<script>
-    let fillData = () => {
-        let ele = document.getElementById('progress_bar');
-        ele.innerHTML += '10%';
-    }
-</script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
+		<script>
+			let fillData = () => {
+				let ele = document.getElementById('progress_bar');
+				ele.innerHTML += '10%';
+			}
+		</script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		
+		<form>
+			<input type="button" value="Return to Homepage" onclick="history.back()">
+		</form>
+</body>
 </html>
