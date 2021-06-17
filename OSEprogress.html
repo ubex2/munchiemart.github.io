@@ -105,19 +105,19 @@
 		font-style: normal; 
 		font-variant: normal; 
 		font-weight: 700;
-		line-height: 25px;  } 
+		line-height: auto;  } 
 
 		h3 { 
 		font-family: Lato; 
-		font-size: 18px; 
+		font-size: 20px; 
 		font-style: normal; 
 		font-variant: normal; 
 		font-weight: 700;
-		line-height: 9px;  } 
+		line-height: auto;  } 
 
 		p { 
 		font-family: Lato; 
-		font-size: 14px; 
+		font-size: 16px; 
 		font-style: normal; 
 		font-variant: normal; 
 		font-weight: 400;  
@@ -125,6 +125,14 @@
 
 		#support {
 		align-items: center;
+		display: inline-block;
+		}
+		#donate {
+		padding-top: 10px;
+		}
+
+		#signoff {
+		vertical-align: middle;
 		display: inline-block;
 		}
 		</style>
@@ -144,24 +152,29 @@
 		<h1 style="color: #68b76a;">HELP US SPREAD THE LOVE</h1>
 		<h3>NOTE: Donations go directly towards supporting La Crosse community members.</h3>
 		<p>Our goal for this project is to stockpile as much financial support as possible within the next few months.</p> 
-		<p>Hopefully, we can raise enough to reach our goal of $500.00 in hopes of donating 20 NEW hammocks to those in need of housing. </p>
-		<p>We greatly value any and all contributions to the cause, your donation will be put to great use!</p>
-		<br>
-		<h3>Sincerely,</h3>
-		<div style="display: inline">
-			<img src="images/favicon.ico" style="max-width: 10%; max-height: 10%;">
-			<p> Munchie Mart Team </p>
-		</div>
-		<hr>
+		<p>Hopefully, we can raise enough to reach our goal of $500.00 in hopes of donating 20 NEW hammocks to those in need of housing.</p>
+		<p>We greatly value all contributions to the cause, your donation will be put to great use!</p>
+		<div id="signoff">
+			<h3>Sincerely,</h3>
+			<img src="images/favicon.ico" style="max-width: 25%; max-height: 25%; float: left; margin: 4px;">
+			<p style="float: inline-end; padding-left: 20px;">Munchie Mart Team</p>
+			<br>
+		</div>	
+	</div>
+	
+	<hr>
+
+	<div id="donate">
 		<br>
 		<!-- DONATION APP EMBED thru DonorBox -->
 		<script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
-			<iframe src="https://donorbox.org/embed/operation-swinging-eagle?default_interval=o&amount=25" name="donorbox" allowpaymentrequest="" seamless="seamless" frameborder="0" scrolling="no" height="700px" width="100%" 
-			style="max-width: 600px; min-width: 300px; max-height:none!important">
-			</iframe>
+		<iframe src="https://donorbox.org/embed/operation-swinging-eagle?default_interval=o&amount=25" name="donorbox" allowpaymentrequest="" seamless="seamless" frameborder="0" scrolling="no" height="700px" width="100%" 
+		style="max-width: 600px; min-width: 300px; max-height:none!important">
+		</iframe>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 	</div>
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		
 	<!-- Homepage Button -->
 	<form id="homepageButton">
